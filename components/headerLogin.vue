@@ -1,11 +1,11 @@
 <template>
-  <container>
+  <div>
       <div class="line"></div>
       <header class="menu">
         <section class="imagem_logo"></section>
         <section class="meio_header"></section>
       </header>
-  </container>
+  </div>
 </template>
 
 <style lang="scss" scoped>

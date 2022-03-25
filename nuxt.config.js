@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: false,
   head: {
     title: 'Interface_SAP',
     htmlAttrs: {
@@ -35,7 +36,7 @@ export default {
     'primevue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // '@nuxtjs/auth',
+    '@nuxtjs/auth',
     'google-fonts',
   ],
 
@@ -50,17 +51,17 @@ export default {
       local: {
         endpoints: {
           login: {
-            url: "http://localhost:8003/api/v1/auth/token/login/",
+            url: "http://localhost:8000/api/v1/auth/token/login/",
             method: "post",
             propertyName: "auth_token",
           },
           logout: {
-            url: "http://localhost:8003/api/v1/auth/token/logout/",
+            url: "http://localhost:8000/api/v1/auth/token/logout/",
             method: "post",
             propertyName: "auth_token",
           },
           user: {
-            url: "http://localhost:8003/cargos/",
+            url: "http://localhost:8000/HistoricoProduto/",
             method: "get",
             propertyName: false,
           },
@@ -71,7 +72,7 @@ export default {
     },
     redirect: {
       login: "/",
-      home: "/home",
+      home: "/transacoes",
     },
   },
 

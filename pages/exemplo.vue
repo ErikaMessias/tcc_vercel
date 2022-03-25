@@ -1,5 +1,5 @@
 <template>
-  <container class="cont" style="background-color:red">
+  <div class="cont" style="background-color:red">
     <headers/>
     <div class="principal">
       <div class="base">
@@ -7,7 +7,7 @@
       </div>
     </div>
     <footers/>
-  </container>
+  </div>
 </template>
 
 <script>
